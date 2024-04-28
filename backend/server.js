@@ -56,6 +56,7 @@ app.post("/addTeacher", async function (req, res) {
   res.end(JSON.stringify(data));
 });
 
+
 app.post("/editTeacher", async function (req, res) {
   let reqBody = req.body;
   console.log(
@@ -106,7 +107,7 @@ app.post("/addStudent", async function (req, res) {
     reqBody.id,
     reqBody.name,
     reqBody.age,
-    reqBody.religion
+    reqBody.hometown
   );
 
   res.setHeader("Content-Type", "application/json");
